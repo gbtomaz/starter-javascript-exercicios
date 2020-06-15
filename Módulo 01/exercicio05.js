@@ -16,13 +16,15 @@ var usuarios = [
  Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um arraycom um separador utilize o join.
  */
 
+
+ // aqui declarei o vetor
 var usuarios = [  
     {    nome: "Diego",    
          habilidades: ["Javascript", "ReactJS", "Redux"]  },  
     {    nome: "Gabriel",    
          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]  }
         ];
-
+// aqui criamos a função com o for...of e na hora de chamar o atributo habilidades, foi necessário o join para que ele trouxesse cada habilidade um ao lado do outro.
 function habilidades(nomes){
 
     for(let nome of nomes){
